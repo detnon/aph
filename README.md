@@ -20,7 +20,7 @@ aws-vault exec <account> -- terraform apply --auto-approve 2>&1 | tee log.log
 extract the requests by either moving the log file to `aws_requests.py` or vice versa and run
 
 ```bash
-python aws_requests.py log.log
+python aph.py log.log
 ```
 
 This will generate a JSON file grouped by service and ordered alphabeticaly eg:
